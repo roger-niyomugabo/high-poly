@@ -1,0 +1,12 @@
+.btn1 {
+    border: 1px solid #333333;
+    width: 183px;
+    height: 57px;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.btn2 {
+    color: #FFFFFF;
+    background: #000000;
+}

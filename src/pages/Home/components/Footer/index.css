@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #008080;
+    height: 300px; 
+}
+
+.footer div > p {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.footer .apply-now a {
+    font-size: 30px;
+    color: #000000;
+}
+
+.footer .apply-now p {
+    font-size: 30px;
+}
+
+.footer div > p {
+    margin: 20px auto;
+}
+
+.footer .terms-of-service {
+    display: flex;
+    gap: 72px;
+}
+
+.footer .apply-now {
+    font-size: x-large;
+}
+
+.footer .apply-now a {
+    display: flex;
+    justify-content: flex-end;
+}

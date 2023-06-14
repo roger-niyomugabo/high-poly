@@ -1,0 +1,56 @@
+.navbar {
+    max-width: 1107px;
+    height: 48px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+.navbar .logo {
+    margin-right: auto;
+    color: #80753D;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.navbar > div img {
+    display: block;
+}
+
+.navbar .test {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navbar .test .login {
+    display: flex;
+}
+
+.navbar .test .login p {
+    margin-left: 8px;
+    color: #333333;
+    font-size: 18px;
+}
+
+.navbar .test .search {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar .test .user, .cart-icon, .menu {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar .test .cart {
+    background: #96DBDB;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
