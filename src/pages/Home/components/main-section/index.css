@@ -1,0 +1,64 @@
+.background {
+    background-image: url('../../../../assets/images/bgImage.png');
+    background-repeat: no-repeat;
+    /* background-size, auto for width, and 90% for height */
+    background-size: 20% 95%;
+    background-position: left bottom;
+    height: 782px;
+    margin: 123px 0 0 0;
+}
+
+.grid-container {
+    max-width: 1011px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 73px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 77px;
+}
+
+.header p {
+    color: #333333;
+    font-size: 36px;
+}
+
+.header #line {
+    width: 65px;
+}
+
+.content-wrapper {
+    max-width: 1041px;
+    margin: 0 auto;
+}
+
+/* New Styles */
+.test-adjust {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 108px;
+}
+
+.tests {
+    width: 1225px;
+    display: flex;
+}
+
+.left {
+    width: 505px;
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    height: 375px;
+    width: 720px;
+    display: flex;
+    align-items: center;
+    padding-left: 37px;
+    background: #96DBDB;
+}

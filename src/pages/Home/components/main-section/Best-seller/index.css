@@ -1,0 +1,76 @@
+.first-container .header #line, .second-container .header #line {
+    width: 65px;
+    color: #333333;
+}
+
+.first-container .header p, .second-container .header p {
+    font-size: 36px;
+    color: #333333;
+    margin: 0 24px;
+}
+
+.first-container .header, .second-container .header {
+    display: flex;
+    align-items: center;
+    margin: 45px 0;
+    justify-content: flex-start;
+}
+
+.image {
+    height: 100%;
+}
+
+.best-seller .seller-content {
+    display: flex;
+    align-items: center;
+    height: 271.99px;
+}
+
+.best-seller .seller-content .content {
+    margin: 32px ;
+}
+
+.best-seller .seller-content .content p:nth-child(1) {
+    color: #333333;
+    font-size: 24px;
+}
+
+.best-seller .seller-content .content p:nth-child(1) span {
+    font-weight: bold;
+}
+
+.best-seller .seller-content .content p:nth-child(2) {
+    margin: 8px 0;
+    color: #777777;
+    font-size: 16px;
+}
+
+.best-seller .seller-content .content a {
+    display: block;
+    margin-bottom: 25px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.best-seller .seller-content .content-container {
+    display: flex;
+    align-items: center;
+    height: 270px;
+    background: #96DBDB;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.main-container {
+    max-width: 1140px;
+    margin: 145px auto 0 auto;
+}
+
+.second-container {
+    margin-top: 100px;
+}

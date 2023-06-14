@@ -1,0 +1,40 @@
+.products {
+    max-width: 469px;
+    max-height: 288px;
+    display: flex;
+    background: #FFFFFF;
+}
+
+.products2 {
+    background: #96DBDB;
+}
+
+.images img {
+    height: 100%;
+    width: 216px;
+}
+
+.products .products-content {
+    display: flex;
+    align-items: center;
+}
+
+.products .products-content .content {
+    margin: 0 46px;
+}
+
+.products .products-content .content > p {
+    color: #777777;
+    font-size: 14px;
+}
+
+.products .products-content .content p:first-child {
+    color: #333333;
+    font-size: 20px;
+}
+
+.products .products-content .content p:nth-child(4) {
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 20px;
+}

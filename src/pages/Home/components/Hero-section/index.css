@@ -1,0 +1,29 @@
+.hero {
+    display: flex;
+    max-width: 1000px;
+    max-height: 505px;
+    margin: 87px auto 0 auto;
+    background: #96DBDB;
+}
+
+.hero .hero-text {
+    margin: 118px 91px 92px 52px;
+}
+
+#line {
+    width: 95px;
+    color: #000000;
+    margin-bottom: 19px;
+}
+
+.hero .hero-title {
+    color: #333333;
+    font-size: 48px;
+    margin-bottom: 70px;
+}
+
+#description {
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
