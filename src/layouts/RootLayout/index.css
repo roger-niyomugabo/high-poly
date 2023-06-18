@@ -3,7 +3,6 @@
     height: 48px;
     margin: 0 auto; 
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     padding: 35px 0px;
 }
@@ -53,4 +52,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Respnsive design */
+/* Small screens design */
+@media screen and (max-width: 375px) {
+    .navbar {
+        max-width: 300px;
+    }
+
+    .navbar .test .login {
+        display: none;
+    }
+
+    .navbar .test .search {
+        display: none;
+    }
 }
