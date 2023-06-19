@@ -1,40 +1,122 @@
 .products {
-    max-width: 469px;
-    max-height: 288px;
-    display: flex;
-    background: #FFFFFF;
+  max-width: 469px;
+  max-height: 288px;
+  display: flex;
+  background: #ffffff;
 }
 
 .products2 {
-    background: #96DBDB;
+  background: #96dbdb;
 }
 
 .images img {
-    height: 100%;
-    width: 216px;
+  height: 100%;
+  width: 216px;
 }
 
 .products .products-content {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .products .products-content .content {
-    margin: 0 46px;
+  margin: 0 46px;
 }
 
 .products .products-content .content > p {
-    color: #777777;
-    font-size: 14px;
+  color: #777777;
+  font-size: 14px;
 }
 
 .products .products-content .content p:first-child {
-    color: #333333;
-    font-size: 20px;
+  color: #333333;
+  font-size: 20px;
 }
 
 .products .products-content .content p:nth-child(4) {
-    color: #333333;
-    font-size: 20px;
-    margin-bottom: 20px;
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Respnsive design */
+/* mobile screens styles */
+@media screen and (max-width: 415px) {
+  .products {
+    width: 251px;
+    max-height: 424px;
+    display: block;
+    padding: 16px;
+  }
+
+  .images {
+    height: 228px;
+    max-width: 219px;
+  }
+
+  .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .products .products-content .content {
+    margin: 0;
+    margin-top: 23px;
+  }
+
+  .products .products-content .content > p {
+    font-size: 11px;
+  }
+
+  .products .products-content .content p:first-child {
+    font-size: 14px;
+  }
+
+  .products .products-content .content p:nth-child(4) {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+/* Small and mobile screens styles */
+@media screen and (max-width: 376px) {
+  .products {
+    width: 251px;
+    max-height: 424px;
+    display: block;
+    padding: 16px;
+  }
+
+  .className {
+    display: none;
+  }
+
+  .images {
+    height: 228px;
+    max-width: 219px;
+  }
+
+  .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .products .products-content .content {
+    margin: 0;
+    margin-top: 23px;
+  }
+
+  .products .products-content .content > p {
+    font-size: 11px;
+  }
+
+  .products .products-content .content p:first-child {
+    font-size: 14px;
+  }
+
+  .products .products-content .content p:nth-child(4) {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 }

@@ -1,8 +1,62 @@
 .btn {
+  border: 1px solid #333333;
+  width: 183px;
+  height: 57px;
+  font-size: 16px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+/* Respnsive design */
+/* mobile screens styles */
+@media screen and (max-width: 415px) {
+  .btn {
     border: 1px solid #333333;
+    width: 100px;
+    height: 36px;
+    font-size: 14px;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  .btn3 {
     width: 183px;
     height: 57px;
     font-size: 16px;
     background-color: inherit;
     cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #333333;
+  }
+  .btn4 {
+    width: 100px;
+    height: 36px;
+    color: #ffffff;
+    background: #000000;
+  }
+}
+/* Small and mobile screens styles */
+@media screen and (max-width: 376px) {
+  .btn {
+    border: 1px solid #333333;
+    width: 100px;
+    height: 36px;
+    font-size: 10px;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  .btn3 {
+    width: 183px;
+    height: 57px;
+    font-size: 16px;
+    background-color: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #333333;
+  }
+  .btn4 {
+    width: 100px;
+    height: 36px;
+    color: #ffffff;
+    background: #000000;
+  }
 }

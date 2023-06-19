@@ -45,7 +45,7 @@
 }
 
 .navbar .test .cart {
-    background: #96DBDB;
+    background: var(--primary);
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -55,10 +55,12 @@
 }
 
 /* Respnsive design */
-/* Small screens design */
-@media screen and (max-width: 375px) {
+/* mobile screens styles */
+@media screen and (max-width: 415px) {
     .navbar {
-        max-width: 300px;
+        max-width: 414px;
+        margin: 0 2em; 
+        padding: 50px 0px;
     }
 
     .navbar .test .login {
@@ -68,4 +70,46 @@
     .navbar .test .search {
         display: none;
     }
+}
+/* Small and mobile screens styles */
+@media screen and (max-width: 376px) {
+    .navbar {
+        max-width: 300px;
+        padding: 50px 0;
+    }
+
+    .navbar .test .login {
+        display: none;
+    }
+
+    .navbar .test .search {
+        display: none;
+    }
+}
+
+/* Very small screens styles */
+@media screen and (max-width: 281px) {
+    .navbar {
+        max-width: 250px;
+        padding: 40px 0px;
+    }
+
+    .navbar .test .cart {
+        display: none;
+    }
+}
+
+/* tablets and laptop styles */
+@media screen and (max-width: 620px) {
+
+}
+
+/* Large tablets and laptop styles */
+@media screen and (max-width: 960px) {
+
+}
+
+/* Desktop and large screens styles */
+@media screen and (max-width: 1500px) {
+
 }

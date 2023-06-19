@@ -1,75 +1,315 @@
-.first-container .header #line, .second-container .header #line {
-    width: 65px;
-    color: #333333;
+.first-container .header #line,
+.second-container .header #line {
+  width: 65px;
+  color: #333333;
 }
 
-.first-container .header p, .second-container .header p {
-    font-size: 36px;
-    color: #333333;
-    margin: 0 24px;
+.first-container .header p,
+.second-container .header p {
+  font-size: 36px;
+  color: #333333;
+  margin: 0 24px;
 }
 
-.first-container .header, .second-container .header {
-    display: flex;
-    align-items: center;
-    margin: 45px 0;
-    justify-content: flex-start;
+.first-container .header,
+.second-container .header {
+  display: flex;
+  align-items: center;
+  margin: 45px 0;
+  justify-content: flex-start;
 }
 
 .image {
-    height: 100%;
+  height: 100%;
 }
 
 .best-seller .seller-content {
-    display: flex;
-    align-items: center;
-    height: 271.99px;
+  display: flex;
+  align-items: center;
+  height: 271.99px;
 }
 
 .best-seller .seller-content .content {
-    margin: 32px ;
+  margin: 32px;
 }
 
 .best-seller .seller-content .content p:nth-child(1) {
-    color: #333333;
-    font-size: 24px;
+  color: #333333;
+  font-size: 24px;
 }
 
 .best-seller .seller-content .content p:nth-child(1) span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .best-seller .seller-content .content p:nth-child(2) {
-    margin: 8px 0;
-    color: #777777;
-    font-size: 16px;
+  margin: 8px 0;
+  color: #777777;
+  font-size: 16px;
 }
 
 .best-seller .seller-content .content a {
-    display: block;
-    margin-bottom: 25px;
-    color: #333333;
-    font-size: 16px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 25px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .best-seller .seller-content .content-container {
-    display: flex;
-    align-items: center;
-    height: 270px;
-    background: #96DBDB;
+  display: flex;
+  align-items: center;
+  height: 270px;
+  background: #96dbdb;
 }
 
 .container {
-    display: flex;
-    gap: 60px;
+  display: flex;
+  gap: 60px;
 }
 
 .main-container {
-    max-width: 1140px;
-    margin: 145px auto 0 auto;
+  max-width: 1140px;
+  margin: 145px auto 0 auto;
 }
 
 .second-container {
-    margin-top: 100px;
+  margin-top: 100px;
+}
+
+/* Respnsive design */
+/* mobile screens styles */
+@media screen and (max-width: 415px) {
+  .best-seller2 {
+    display: none;
+  }
+  .first-container .header #line,
+  .second-container .header #line {
+    width: 94px;
+  }
+  .first-container .header,
+  .second-container .header {
+    justify-content: flex-end;
+    margin: 45px 37px 51px 0;
+  }
+
+  .first-container .header p,
+  .second-container .header p {
+    font-weight: bold;
+    font-size: 1.9em;
+    margin: 0 7px;
+  }
+
+  .best-seller .seller-content .content p:nth-child(2) {
+    margin: 6px 0;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .best-seller .seller-content .content a {
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+
+  .best-seller .seller-content .content p:nth-child(1) {
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .best-seller .seller-content .content {
+    margin: 1.5em;
+  }
+
+  .main-container {
+    max-width: 414px;
+    margin: 63px 0 0 0;
+  }
+
+  .best-seller .seller-content {
+    max-width: 380px;
+    height: 270px;
+  }
+
+  .content-container {
+    width: 60%;
+  }
+
+  .image {
+    width: 40%;
+  }
+
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+  }
+
+  .best-seller {
+    margin-left: auto;
+  }
+
+  .second-container {
+    margin-top: 71px;
+  }
+
+  .second-container .container .content-container .content p:first-child span {
+    display: none;
+  }
+
+  .second-container .container .content-container .content p:nth-child(2) {
+    margin-top: 10px;
+  }
+}
+
+/* Small and mobile screens styles */
+@media screen and (max-width: 376px) {
+  .best-seller2 {
+    display: none;
+  }
+
+  .first-container .header #line,
+  .second-container .header #line {
+    width: 87px;
+  }
+
+  .first-container .header,
+  .second-container .header {
+    justify-content: flex-end;
+    margin-right: 37px;
+    margin-bottom: 51px;
+  }
+
+  .first-container .header p,
+  .second-container .header p {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 7px;
+  }
+
+  .best-seller .seller-content .content p:nth-child(2) {
+    margin: 6px 0;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .best-seller .seller-content .content-container {
+    height: 203px;
+  }
+
+  .best-seller .seller-content .content a {
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 18px;
+  }
+
+  .best-seller .seller-content .content p:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .best-seller .seller-content .content p:nth-child(1) span {
+    display: none;
+  }
+
+  .best-seller .seller-content .content {
+    margin: 24px;
+  }
+
+  .main-container {
+    max-width: 375px;
+    margin: 63px 0 0 0;
+  }
+
+  .best-seller .seller-content {
+    height: 203px;
+    max-width: 318px;
+  }
+
+  .content-container {
+    width: 68%;
+  }
+
+  .image {
+    width: 32%;
+  }
+
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+  }
+
+  .best-seller {
+    margin: 0 0 0 54px;
+  }
+
+  .second-container {
+    margin-top: 71px;
+  }
+
+  .second-container .container .content-container .content p:first-child {
+    display: none;
+  }
+
+  .second-container .container .content-container .content p:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+
+/* Very small screens styles */
+@media screen and (max-width: 281px) {
+  .first-container .header,
+  .second-container .header {
+    margin: 0 0 40px 20px;
+    justify-content: flex-start;
+  }
+
+  .first-container .header #line,
+  .second-container .header #line {
+    display: none;
+  }
+
+  .best-seller .seller-content {
+    /* height: 203px; */
+    width: 280px;
+    /* border: 1px solid blue; */
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  .image {
+    /* width: 32%; */
+    display: none;
+  }
+
+  .best-seller .seller-content .content p:nth-child(1) span {
+    display: inline-block;
+    font-size: 1.3em;
+  }
+
+  .best-seller .seller-content .content {
+    margin: 0px auto;
+  }
+
+  .main-container {
+    max-width: 280px;
+    margin: 70px 0 0 0;
+  }
+
+  .best-seller {
+    margin-left: auto;
+  }
+  .second-container .container .content-container .content p:first-child {
+    display: block;
+    font-size: 1.2em;
+  }
+
+  .second-container .container .content-container .content p:first-child span {
+    display: none;
+  }
 }

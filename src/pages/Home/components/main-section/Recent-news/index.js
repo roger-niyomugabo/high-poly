@@ -13,9 +13,9 @@ const RecentNews = () => {
                 <div className='content'>
                     <p>We're focused</p>
                     <p>We provide an exceptional service by only focusing <br /> on hair A. Our goal is to provide a different type of <br /> experience by using responsible products</p>
-                    <DiscoverButton />
+                    <DiscoverButton fontWeightChange={true} />
                 </div>
-                <div>
+                <div className='content-image'>
                     <img src={rectangle22} alt="main-sectionImage" />
                 </div>
             </div>

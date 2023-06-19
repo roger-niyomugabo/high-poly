@@ -9,13 +9,13 @@ const Footer = () => {
                     <p>Terms of Service</p>
                     <p>Privacy Policy</p>
                 </div>
-                <div>
+                <div className='social-medias'>
                     <p>Instagram</p>
                     <p>Facebook</p>
                 </div>
             </div>
             <div className='apply-now'>
-                <p>We invite you to join our team.</p>
+                <p>We invite you to join <span>our team.</span></p>
                 <Link to='#'>Apply Now</Link>
             </div>
         </div>

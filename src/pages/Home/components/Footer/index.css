@@ -1,39 +1,91 @@
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #008080;
-    height: 300px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #008080;
+  height: 300px;
 }
 
 .footer div > p {
-    color: #FFFFFF;
-    font-size: 16px;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .footer .apply-now a {
-    font-size: 30px;
-    color: #000000;
+  font-size: 30px;
+  color: #000000;
 }
 
 .footer .apply-now p {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .footer div > p {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
 .footer .terms-of-service {
-    display: flex;
-    gap: 72px;
-}
-
-.footer .apply-now {
-    font-size: x-large;
+  display: flex;
+  gap: 72px;
 }
 
 .footer .apply-now a {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Respnsive design */
+/* mobile screens styles */
+@media screen and (max-width: 415px) {
+  .footer {
+    max-width: 414px;
+    height: auto;
+    display: block;
+    margin: 0px;
+    padding: 60px 31px 50px 40px;
+    text-align: center;
+  }
+
+  .footer .terms-of-service {
+    display: block;
+  }
+
+  .footer .terms-of-service .social-medias {
+    margin: 35px 0 93px 0;
+  }
+
+  .footer .apply-now p {
+    text-align: right;
+  }
+
+  .footer .apply-now a {
+    font-size: 24px;
+  }
+}
+/* Small and mobile screens styles */
+@media screen and (max-width: 376px) {
+  .footer {
+    max-width: 375px;
+    height: auto;
+    display: block;
+    margin: 0px;
+    padding: 66px 31px 50px 48px;
+    text-align: center;
+  }
+
+  .footer .terms-of-service {
+    display: block;
+  }
+
+  .footer .terms-of-service .social-medias {
+    margin: 35px 0 93px 0;
+  }
+
+  .footer .apply-now p {
+    text-align: right;
+  }
+
+  .footer .apply-now a {
+    font-size: 24px;
+  }
 }

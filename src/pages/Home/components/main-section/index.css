@@ -1,64 +1,195 @@
 .background {
-    background-image: url('../../../../assets/images/bgImage.png');
-    background-repeat: no-repeat;
-    /* background-size, auto for width, and 90% for height */
-    background-size: 20% 95%;
-    background-position: left bottom;
-    height: 782px;
-    margin: 123px 0 0 0;
+  background-image: url("../../../../assets/images/bgImage.png");
+  background-repeat: no-repeat;
+  /* background-size, auto for width, and 90% for height */
+  background-size: 20% 95%;
+  background-position: left bottom;
+  height: 782px;
+  margin: 123px 0 0 0;
 }
 
 .grid-container {
-    max-width: 1011px;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 73px;
+  max-width: 1011px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 73px;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 77px;
+.content-wrapper .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 77px;
 }
 
-.header p {
-    color: #333333;
-    font-size: 36px;
+.content-wrapper .header p {
+  color: #333333;
+  font-size: 36px;
+  margin-left: 24px;
 }
 
-.header #line {
-    width: 65px;
+.content-wrapper .header #line {
+  width: 65px;
 }
 
 .content-wrapper {
-    max-width: 1041px;
-    margin: 0 auto;
+  max-width: 1041px;
+  margin: 0 auto;
 }
 
 /* New Styles */
 .test-adjust {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 108px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 108px;
 }
 
 .tests {
-    width: 1225px;
-    display: flex;
+  width: 1225px;
+  display: flex;
 }
 
 .left {
-    width: 505px;
-    display: flex;
-    align-items: center;
+  width: 505px;
+  display: flex;
+  align-items: center;
 }
 
 .right {
-    height: 375px;
-    width: 720px;
+  height: 375px;
+  width: 720px;
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
+  background: #96dbdb;
+}
+
+/* Responsive design */
+/* mobile screens styles */
+@media screen and (max-width: 415px) {
+  .grid-container .product3,
+  .grid-container .product4 {
+    display: none;
+  }
+
+  .background {
+    background-image: none;
+    height: 1000px;
+    margin: 93px 0 43px 0;
+  }
+
+  .content-wrapper .header {
+    margin-bottom: 65px;
+  }
+
+  .content-wrapper .header p {
+    font-weight: bold;
+    font-size: 1.9em;
+    margin-left: 12px;
+  }
+
+  .content-wrapper .header #line {
+    width: 120px;
+  }
+
+  .content-wrapper {
+    max-width: 380px;
+    height: 978px;
+  }
+
+  .grid-container {
     display: flex;
+    flex-direction: column;
+    gap: 43px;
     align-items: center;
-    padding-left: 37px;
-    background: #96DBDB;
+  }
+
+  .test-adjust {
+    margin-bottom: 71px;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    height: 100%;
+    width: 330px;
+    display: block;
+    padding: 0px;
+    margin-left: auto;
+  }
+}
+/* Small and mobile screens styles */
+@media screen and (max-width: 376px) {
+  .grid-container .product3,
+  .grid-container .product4 {
+    display: none;
+  }
+
+  .background {
+    background-image: none;
+    height: 978px;
+    margin: 93px 0 0 0;
+  }
+
+  .content-wrapper .header {
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+
+  .content-wrapper .header p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 24px;
+  }
+
+  .content-wrapper .header #line {
+    width: 87px;
+  }
+
+  .content-wrapper {
+    max-width: 276px;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    align-items: center;
+  }
+
+  .test-adjust {
+    margin-bottom: 71px;
+    margin-top: 43px;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    height: 100%;
+    width: 320px;
+    display: block;
+    padding: 0px;
+    margin-left: auto;
+  }
+}
+
+/* Very small screens styles */
+@media screen and (max-width: 281px) {
+  .content-wrapper .header #line {
+    display: none;
+  }
+
+  .content-wrapper .header {
+    justify-content: flex-end;
+    margin-right: 1em;
+    margin-bottom: 45px;
+  }
+
+  .right {
+    width: 281px;
+  }
 }
